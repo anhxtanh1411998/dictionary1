@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        tools:context=".detail_word">
+
+        <TextView
+            android:id="@+id/detail_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/detail_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_word"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/detail_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_content"
+            android:layout_marginTop="16dp" />
+
+        <WebView
+            android:id="@+id/web_display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ic_like"
+            android:layout_marginTop="32dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_like_24dp"
+            android:layout_below="@+id/detail_link"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:id="@+id/ic_like"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+
+</ScrollView>
